@@ -59,9 +59,13 @@ body {
       height: 32px;
       border: 1.9px solid rgb(58, 55, 55);
 
-      &:focus {
-        border: 1.9px solid rgb(13, 91, 180);
-      }
+      // &:focus {
+      //   border: 1.9px solid rgb(13, 91, 180);
+      // }
+    }
+    
+    input:focus {
+      border: 1.9px solid rgb(13, 91, 180);
     }
 
     span {
