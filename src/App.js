@@ -10,24 +10,45 @@ function App() {
     <div>
       <header className="header-youtube">
         <nav className="nav-logo">
-          <HiIcons.HiOutlineMenu className="barra" />
+          <HiIcons.HiOutlineMenu className="nav-logo__barra" />
           <img
-            className="logo-youtube"
+            className="nav-logo__youtube"
             src="/assets/youtube.png"
             alt="youtube"
           />
-          <span>PE</span>
+          <span className='nav-logo__pe' >PE</span>
         </nav>
 
+
+
+
+
+
+
+
+
+
         <nav className="nav-search">
-          <div className="content-input">
-            <input type="text" placeholder="Buscar" />
-            <span>
+
+          <div className="nav-search__content">
+
+            <input className='nav-search__content--input' type="text" placeholder="Buscar" />
+
+            <span className='nav-search__content--span'>
               <HiIcons.HiOutlineSearch />
             </span>
+
           </div>
-          <MdIcons.MdMic className="micro" />
+
+          <MdIcons.MdMic className="nav-search__micro" />
+
         </nav>
+
+
+
+
+
+
 
         <nav className="nav-icons">
           <div className="content-icons">
@@ -45,6 +66,7 @@ function App() {
 
           <img className="avatar" src="/assets/avatar2.jpg" alt="avatar" />
         </nav>
+
       </header>
     </div>
   );

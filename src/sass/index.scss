@@ -4,6 +4,8 @@ body {
   font-family: "Roboto";
 }
 
+
+//content padre
 .header-youtube {
   background-color: #202020;
   height: 56px;
@@ -13,22 +15,23 @@ body {
   padding: 0px 30px;
 }
 
+
 // ***************
 .nav-logo {
   color: white;
   display: flex;
   align-items: center;
 
-  .barra {
+  &__barra {
     font-size: 22px;
     margin-right: 20px;
   }
 
-  .logo-youtube {
+  &__youtube {
     width: 80px;
   }
 
-  span {
+  &__pe {
     font-size: 10px;
     color: gray;
     font-weight: 600;
@@ -36,20 +39,20 @@ body {
   }
 }
 
-// ***************************
 
+// ***************************
 .nav-search {
   width: 45%;
   padding-left: 30px;
   display: flex;
   align-items: center;
 
-  .content-input {
+  &__content {
     display: flex;
     align-items: center;
     width: 100%;
 
-    input {
+    &--input {
       width: 100%;
       max-width: 600px;
       background-color: #121212;
@@ -59,16 +62,12 @@ body {
       height: 32px;
       border: 1.9px solid rgb(58, 55, 55);
 
-      // &:focus {
-      //   border: 1.9px solid rgb(13, 91, 180);
-      // }
-    }
-    
-    input:focus {
-      border: 1.9px solid rgb(13, 91, 180);
+      &:focus {
+        border: 1.9px solid rgb(13, 91, 180);
+      }
     }
 
-    span {
+    &--span {
       background-color: #313131;
       height: 32px;
       width: 65px;
@@ -89,7 +88,7 @@ body {
     }
   }
 
-  .micro {
+  &__micro {
     height: 26px;
     width: 26px;
     color: white;
@@ -98,68 +97,60 @@ body {
   }
 }
 
-
-
+// ***************************
 
 .nav-icons {
+  display: flex;
+  align-items: center;
+
+  .content-icons {
+    color: white;
     display: flex;
     align-items: center;
 
+    .video {
+      font-size: 20px;
+      cursor: pointer;
+    }
 
-    .content-icons {
-       color: white;
-       display: flex;
-       align-items: center;
+    .icons {
+      margin-left: 30px;
+      font-size: 22px;
+      cursor: pointer;
+    }
 
-       .video {
-           font-size: 20px;
-           cursor: pointer;
-       }
+    div {
+      width: 30px;
+      height: 30px;
+      margin-left: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
 
-       .icons {
-           margin-left: 30px;
-            font-size: 22px;
-            cursor: pointer;
-        
-       }
-
-       div {
-        width: 30px;
-        height: 30px;
-        margin-left: 16px;
+      svg {
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .numero {
+        position: absolute;
+        font-size: 11px;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        top: 0;
+        right: 0;
+        background-color: red;
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
-
-        svg {
-            font-size: 20px;
-            cursor: pointer;
-        }
-        .numero {
-            position: absolute;
-            font-size: 11px;
-            border-radius: 50%;
-            width: 15px;
-            height: 15px;
-            top: 0;
-            right: 0;
-            background-color: red;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-
+      }
     }
-
-   
-    }
-
+  }
 
   .avatar {
-      margin-left: 20px;
-     width: 36px;
-     border-radius: 50%; 
+    margin-left: 20px;
+    width: 36px;
+    border-radius: 50%;
   }
 }
