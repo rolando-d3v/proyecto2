@@ -1,0 +1,110 @@
+.card {
+  width: 350px;
+  background-color: #181818;
+  padding: 0px 8px;
+
+
+  &__video {
+    line-height: 0;
+    position: relative;
+
+    > img {
+      width: 100%;
+    }
+    
+    &--time {
+      display: inline-block;
+      // position: absolute;
+      // right: 5px;
+      // bottom: 4px;
+      // padding: 10px 6px;
+      // background-color: rgba(0, 0, 0, 0.6);
+      // border-radius: 3px;
+      // color: white;
+      // font-size: 14px;
+    }
+    
+    &--span {
+      display: none;
+    }
+  }
+
+
+
+  &__content {
+    color: white;
+    margin-top: 15px;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+
+    &--logo-canal {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+    }
+
+    &--info {
+      width: 260px;
+      display: flex;
+      flex-direction: column;
+      .title {
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+
+      span {
+        color: #9f9f9f;
+        line-height: 20px;
+      }
+    }
+
+    &--3puntos {
+      font-size: 20px;
+      opacity: 0;
+    }
+  }
+
+  
+  &:hover {
+    .card__video {
+      position: relative;
+
+      &--span {
+        height: 24px;
+        width: 24px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        position: absolute;
+        right: 10px;
+        text-align: center;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+        cursor: pointer;
+
+        svg {
+          font-size: 20px;
+        }
+      }
+
+      &--reloj {
+        position: absolute;
+        top: 5px;
+        right: 6px;
+      }
+
+      &--play {
+        position: absolute;
+        top: 35px;
+        right: 6px;
+      }
+    }
+
+    .card__content--3puntos {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}
